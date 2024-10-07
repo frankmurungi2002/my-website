@@ -1,0 +1,144 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    background-color: #444;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+section {
+    text-align: left;
+    text-decoration-color: aqua;
+    text-wrap: 30px;
+    color: rgb(32, 25, 13);
+    padding: 2rem;
+    margin: 1rem 0;
+    background-color: #d0c6da;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer styling */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 2rem 0;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer .footer-content .social-icons {
+    margin: 1rem 0;
+}
+
+footer .footer-content .social-icons a {
+    color: #fff;
+    margin: 0 0.5rem;
+    text-decoration: none;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+footer .footer-content .social-icons a:hover {
+    color: #00796b; /* Teal color on hover */
+}
+
+footer .footer-content p {
+    margin: 0.5rem 0;
+}
+
+footer .footer-bottom {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: #bbb;
+}
+
+/* Basic styling for the image */
+img {
+    border-radius: 50%; /* Makes the image circular */
+    width: 200px; /* Adjust the size as needed */
+    height: 200px; /* Adjust the size as needed */
+    object-fit: cover; /* Ensures the image covers the entire area */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+}
+
+/* Align the image to the left */
+img.align-left {
+    float: left;
+    margin: 0 1rem 1rem 0; /* Adds some space around the image */
+}
+
+/* Hover effect */
+img:hover {
+    transform: scale(1.1); /* Slightly enlarges the image on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Enhances the shadow on hover */
+}
+
+/* Adding a border */
+img.border {
+    border: 5px solid #00796b; /* Adds a teal border */
+}
+
+/* Adding a grayscale filter */
+img.grayscale {
+    filter: grayscale(100%); /* Converts the image to grayscale */
+}
+
+/* Adding a sepia filter */
+img.sepia {
+    filter: sepia(100%); /* Adds a sepia tone to the image */
+}
+
+/* Adding a blur effect */
+img.blur {
+    filter: blur(5px); /* Adds a blur effect */
+}
+
+/* Adding a shadow effect */
+img.shadow {
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5); /* Adds a strong shadow */
+}
+
+/* Adding a hover overlay effect */
+img.overlay:hover::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Adds a dark overlay */
+    border-radius: 50%; /* Ensures the overlay matches the image shape */
+}
